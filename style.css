@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('assets/fonts/Akt-Medium.ttf') format('ttf'),
+         url('assets/fonts/Parkinsans-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Akt-Medium', sans-serif;
+	margin-left: 400px;
+	margin-right: 400px;
+	margin-bottom: 150px;
+}
+
+h1 {
+	font-family: 'Parkinsans-Medium', sans-serif;
+	text-align: center;
+	text-weight: bold;
+}
+
+footer {
+	background-color: #666;
+	color: #333;
+	text-align: center;
+	text-weight: bold;
+}
+
+#gen-div-opening {
+	background-color: #666;
+	color: #333;
+	text-align: center;
+	text-weight: bold;
+	width: 420px;
+	margin-left: 450px;
+}
+
+#ren-div-opening {
+	background-color: #666;
+	color: #333;
+	text-align: center;
+	text-weight: bold;
+	width: 420px;
+}
