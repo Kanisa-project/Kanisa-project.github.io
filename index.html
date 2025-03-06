@@ -7,48 +7,67 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="assets/images/banner_foto.png" alt="Website banner" style="width:100%; height:100px;">
-        <h1>Welcome to the Kanisa Project!</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="galllllery.html">Gallery</a></li>
-                    <li><a href="project.html">Project</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="kanisa-project.html">Documentation</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <nav class="nav-bar">
+            <img src="assets/images/banner_foto.png" alt="Website banner" style="width:100%; height:100px;">
+        
+            <h1>Welcome to the Kanisa Project!</h1>
+            <a onclick="showContent('home')">Home</a>
+            <a onclick="showContent('gallery')">Gallery</a>
+            <a onclick="showContent('regular-gen')">Generator</a>
+            <a onclick="showContent('kanisa-ren')">Renderer</a>
+            <a onclick="showContent('gaim-ren')">Gaims</a>
+        </nav>
     </header>
-    <main>
-        <p>A generator will simply generate new Masterpiece files for use in the Renderer.</p>
-        <p>The renderer will create all sorts of different things with each Masterpiece file.</p>
-        <p>Masterpiece files are simple human-readable JSON files with specific keys and values for the renderer or a generator to use.</p>
-		
-    </main>
-	<kanisaGen>
-		<div id="gen-div-opening">
-			<a href="https://github.com/Kanisa-project/Regular-Gen/raw/refs/heads/kani_branch/dist/kanisaGen.zip">Example Generator</a></br></br>
-			<p>This generator is seriously not ready yet, seriously. There is a small chance you're just not ready for the generator, either way I plan for weekly updates soon.</p>
+    <main class="content-container">
+		<div id="home", class="content active">
+            <p>
+                I am designing this art project with all computer skill levels in mind. If all you know how to use is a web browser, navigate to
+                "Renderer" or "Gaims". If you're a bit more adventurous and know how to unzip a file, check out the "Generator". I want any person
+                to be able to use any portion of this project. What started as a simple paint program has turned into something very entertaining.
+            </p>
 		</div>
-	</kanisaGen>
-	<kanisaRen>
-		<div id="ren-div-opening">
+		<div id="gallery", class="content">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="assets/images/foto_foto_foto_foto.png" alt="foto foto foto foto" onclick="openLightbox(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/tile_glyph_glyph.png" alt="tile glyph glyph" onclick="openLightbox(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/glyth_glyth.png" alt="glyth glyth" onclick="openLightbox(this)">
+                </div>
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">x</span>
+                <img id="lightbox-img" src="" alt="Lightbox image">
+            </div>
+		</div>
+		<div id="regular-gen", class="content">
+            You can download the generator <a href="https://github.com/Kanisa-project/Regular-Gen/raw/refs/heads/kani_branch/dist/kanisaGen.zip">here</a>. Just find the downloaded file and unzip it, this will create the working directory with 3 
+            folders and an application. Double click the application to run and it'll open a window with 4 main sections: <br><br>
+            <ol>
+                <li>Texioty</li>
+                <li>IDUTC</li>
+                <li>aRtay</li>
+                <li>Kinvow</li>
+            </ol>
+		</div>
+		<div id="kanisa-ren", class="content">
 			<a href="https://bluebeard22.itch.io/kanisaren">Example Renderer</a></br></br>
 			<p>The renderer can render Masterpiece files, there is quite a bit that goes into it, but I decided to include everything that is needed to work properly.
 			This will create art for right now, with major plans in the future.</p>
 		</div>
-	</kanisaRen>
-	<gaimRen>
-		<div id="gen-div-opening">
+		<div id="gaim-ren", class="content">
 			<a href="https://kanisa.itch.io/gaimren">Example Gaims</a></br></br>
 			<p>These gaims are hand created and randomly mashed together. Currently only hand created, but soon you can play tic-tac-toe with battleship rules.</p>
 		</div>
-	</gaimRen>
+    </main>
 	
     <footer>
         <p>2025 Kanisa</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
