@@ -23,11 +23,14 @@
 		<div id="home", class="content active">
             <p>
                 I am designing this art project with all computer skill levels in mind. If all you know how to use is a web browser, navigate to
-                "Renderer" or "Gaims". If you're a bit more adventurous and know how to unzip a file, check out the "Generator". I want any person
-                to be able to use any portion of this project. What started as a simple paint program has turned into something very entertaining.
+                "Renderer" or "Gaims". If you're a bit more adventurous and know how to unzip a file, check out the "Generator". <br><br><br>
+                The "Gallery" has some images that I've been able to create within a Generator.
             </p>
 		</div>
 		<div id="gallery", class="content">
+            <p>
+                Click an image to see the full version, the esc-key closes the image.
+            </p>
             <div class="gallery">
                 <div class="gallery-item">
                     <img src="assets/images/foto_foto_foto_foto.png" alt="foto foto foto foto" onclick="openLightbox(this)">
@@ -38,30 +41,43 @@
                 <div class="gallery-item">
                     <img src="assets/images/glyth_glyth.png" alt="glyth glyth" onclick="openLightbox(this)">
                 </div>
+                <div class="gallery-item">
+                    <img src="assets/images/avatar_foto.png" alt="avatar foto" onclick="openLightbox(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto.png" alt="foto" onclick="openLightbox(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/glyph_wordie_wordie.png" alt="glyph wordie wordie" onclick="openLightbox(this)">
+                </div>
             </div>
             <div id="lightbox" class="lightbox">
-                <span class="close-btn" onclick="closeLightbox()">x</span>
+                <span class="close-btn" onclick="closeLightbox()">⨂</span>
                 <img id="lightbox-img" src="" alt="Lightbox image">
             </div>
 		</div>
 		<div id="regular-gen", class="content">
-            You can download the generator <a href="https://github.com/Kanisa-project/Regular-Gen/raw/refs/heads/kani_branch/dist/kanisaGen.zip">here</a>. Just find the downloaded file and unzip it, this will create the working directory with 3 
+            You can download the generator <a href="https://github.com/Kanisa-project/Regular-Gen/raw/refs/heads/kani_branch/dist/kanisaGen.zip">here</a>. After downloading, find the file and unzip it, this will create the working directory with 3 
             folders and an application. Double click the application to run and it'll open a window with 4 main sections: <br><br>
             <ol>
-                <li>Texioty</li>
-                <li>IDUTC</li>
-                <li>aRtay</li>
-                <li>Kinvow</li>
-            </ol>
+                <li>Texioty - Accepts commands and responses for questions.</li>
+                <li>IDUTC - Sets the beginning of a masterpiece file.</li>
+                <li>aRtay - Primary options for creating images.</li>
+                <li>Kinvow - Main display of images being created.</li>
+            </ol><br>
+            Each section can display or modify pieces of masterpiece file, always one or the other, rarely both.
+
 		</div>
 		<div id="kanisa-ren", class="content">
-			<a href="https://bluebeard22.itch.io/kanisaren">Example Renderer</a></br></br>
-			<p>The renderer can render Masterpiece files, there is quite a bit that goes into it, but I decided to include everything that is needed to work properly.
-			This will create art for right now, with major plans in the future.</p>
+            <p>
+                A renderer is anything that will accept a masterpiece file and render some type of anything from it.<a href="https://kanisa.itch.io/basic-renderer">here</a>
+            </p>
 		</div>
 		<div id="gaim-ren", class="content">
-			<a href="https://kanisa.itch.io/gaimren">Example Gaims</a></br></br>
-			<p>These gaims are hand created and randomly mashed together. Currently only hand created, but soon you can play tic-tac-toe with battleship rules.</p>
+		    <p>
+                A simple entry point for Kanisa is the Gaim renderer. No need to download anything, just check <a href="https://kanisa.itch.io/gaimren">here</a>. It already has some example 
+                masterpiece files to choose from a plethora of different simple 2D games.
+            </p>
 		</div>
     </main>
 	

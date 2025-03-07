@@ -87,7 +87,7 @@ ol {
 }
 
 .gallery-item img:hover {
-	transform: scale(1.05);
+	transform: scale(1.1);
 }
 
 .lightbox {
@@ -113,6 +113,24 @@ ol {
 	position: absolute;
 	top: 20px;
 	right: 30px;
+	color: white;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.cycle-left {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	color: white;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.cycle-right {
+	position: absolute;
+	top: 50%;
+	right: 30%;
 	color: white;
 	font-size: 40px;
 	cursor: pointer;

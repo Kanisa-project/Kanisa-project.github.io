@@ -1,3 +1,6 @@
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
 function showContent(contentId) {
     const contents = document.getElementsByClassName('content');
     for (let content of contents) {
@@ -11,18 +14,23 @@ function showContent(contentId) {
 }
 
 function openLightbox(imgElement) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
     lightboxImg.src = imgElement.src;
     lightbox.style.display = 'flex';
 }
 
 function closeLightbox() {
-    const lightbox = document.getElementById('lightbox');
     lightbox.style.display = 'none';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     showContent('home');
 });
-
+document.addEventListener("keydown", function(event) {
+    console.log("Key down: ", event.key);
+    if (event.key === "Escape") {
+        closeLightbox();
+    }
+});
+document.addEventListener("click", function(event) {
+    // closeLightbox();
+});
