@@ -59,7 +59,9 @@ body {
 
 h1 {
 	font-family: 'Parkinsans-Medium', sans-serif;
-	text-align: center;
+	text-align: left;
+	color: #2ead4e;
+	padding-left: 22px;
 }
 
 ol {
